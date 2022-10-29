@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Solis Occasu</title>
+	<link rel="stylesheet" href="assets/styles/main.css">
+</head>
+<body>
+	<!-- PROJECT IDEA  -->
+	<!-- Create a customized website that uses the exaroton API. -->
+	<header>
+		<h1>Solis Occasu</h1>
+		<p>Manage your exaroton server using the exaroton API</p>
+	</header>
+	
+	
+	<div id="features">
+		<h1 class="actionTitle">What do you want to do?</h1>
+		<form method="GET" id="featuresForm">
+			<div class="serverInput">
+				<h2 class="insertServerTitle">Insert your server ID, address or name:</h2>
+				<input type="text" name="server" id="serverIdInput" placeholder="Server name|id|address">
+			</div>
+			<div class="listFeatures">
+				<div class="feature">
+					<button id="startServerBtn" class="btn"><h3 class="featureName">Start server</h3></button>
+				</div>
+				<div class="feature">
+					<button id="stopServerBtn" class="btn"><h3 class="featureName">Stop server</h3></button>
+				</div>
+				<div class="feature">
+					<button id="restartServerBtn" class="btn"><h3 class="featureName">Restart server</h3></button>
+				</div>
+				<div class="feature">
+					<button id="getServerLogBtn" class="btn"><h3 class="featureName">Get server log</h3></button>
+				</div>
+				<div class="feature">
+					<button id="getServerRamBtn" class="btn"><h3 class="featureName">Get server RAM</h3></button>
+				</div>
+				<div class="feature">
+					<button id="getServerMotdBtn" class="btn"><h3 class="featureName">Get server MOTD</h3></button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div id="results">
+		<h1 class="actionTitle">Results from action: </h1>
+	</div>
+	<div id="errors">
+		<h1 class="actionTitle">Errors:</h1>
+	</div>
+	<footer>
+		<p>Website developed by <a href="https://alex22sv.tk/">Alex22_SV</a></p>
+	</footer>
+	<script src="assets/scripts/main.js"></script>
+</body>
+</html>

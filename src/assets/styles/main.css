@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Default values */
+:root {
+    --main-color: #19ba19;
+    --dark-green-color: #090a09;
+    --dark-gray-color: #171616;
+    --light-green-color: #e2fbe2;
+    --light-gray-color: #e1e1e1;
+    --error-color: #f13939;
+}
+/* Custom fonts */
+@font-face {
+    font-family: 'Best Valentina';
+    src: url('../fonts/BestValentina.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Body */
+/*
+body {
+    background: var(--main-color);
+    background: -moz-linear-gradient(45deg, var(--main-color) 0%, #91c491 25%, #91c491 72%, var(--main-color) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, var(--main-color)), color-stop(25%, #91c491), color-stop(72%, #91c491), color-stop(100%, var(--main-color)));
+    background: -webkit-linear-gradient(45deg, var(--main-color) 0%, #91c491 25%, #91c491 72%, var(--main-color) 100%);
+    background: -o-linear-gradient(45deg, var(--main-color) 0%, #91c491 25%, #91c491 72%, var(--main-color) 100%);
+    background: -ms-linear-gradient(45deg, var(--main-color) 0%, #91c491 25%, #91c491 72%, var(--main-color) 100%);
+    background: linear-gradient(45deg, var(--main-color) 0%, #91c491 25%, #91c491 72%, var(--main-color) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--main-color)', endColorstr='var(--main-color)', GradientType=1 );
+} */
+
+/* Header */
+header {    
+    background-color: var(--dark-green-color);
+    color: white;
+    padding: 10px 0;
+    margin: 1px;
+    text-align: center;
+}
+header p a{
+    color: white;
+    text-decoration: none;
+    
+}
+header h1{
+    font-family: 'Best Valentina';
+    font-size: 70px;
+    margin-left: 15px;
+    padding: 0;
+}
+header p {
+    font-size: 15px;
+    padding: 0;
+    margin-left: 25px;
+    font-style: italic;
+}
+
+/* Features */
+#features {
+    background-color: var(--dark-gray-color);
+    color: var(--light-gray-color);
+    height: 225px;
+    padding-bottom: 30px;
+
+}
+.actionTitle {
+    font-size: 45px;
+    color: var(--light-green-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 15px;
+}
+#featuresForm{
+    display: flex;
+    flex-direction: column;
+}
+#featuresForm .serverInput {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+    padding-bottom: 30px;
+}
+#featuresForm .listFeatures {
+    display: flex;
+    flex-direction: row;
+}
+#featuresForm .feature {
+    margin: 5px 25px;
+}
+#featuresForm .insertServerTitle {
+    margin: 5px 10px;
+}
+#featuresForm input {
+    font-size: 15px;
+    height: 30px;
+    width: 300px;
+    padding: 5px 5px;
+}
+#featuresForm .feature button {
+    font-size: 25px;
+    background-color: var(--main-color);
+    color: var(--light-gray-color);
+    padding: 2px    ;
+}
+
+/* Results */
+#results {
+    background-color: var(--dark-green-color);
+    color: var(--light-gray-color);
+    height: auto;   
+    padding-bottom: 30px;
+}
+.result {
+    color: var(--main-color);
+}
+/* Errors */
+#errors {
+    display: block;
+    background-color: var(--dark-green-color);
+    color: var(--light-gray-color); 
+    height: auto;
+    padding-bottom: 30px;
+}
+.error {
+    color: var(--error-color);
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--dark-gray-color);
+    color: white;
+    padding: 10px 0;
+    height: 20px;
+}
+
+footer p {
+    font-size: 18px;
+    text-align: center;
+}
+footer p a {
+    text-decoration: none;
+    color: var(--main-color);
+}
